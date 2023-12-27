@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import Form from './Components/Form';
+import Logo from './Components/Logo';
+import PackingList from './Components/PackingList';
+import Stats from './Components/Stats';
 
 function App() {
+  // let [items, setIems] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+     <Logo/>
+     <Form/>
+     <PackingList/>
+     <Stats/>
     </div>
   );
 }
